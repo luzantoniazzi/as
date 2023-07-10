@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cajero</title>
+</head>
+<body>
+    
+    <form action="">
+        <h1>Acceso</h1>
+        <label for="">Usuario</label>
+        <input type="text" name="u" id="">
+        <label for="">Contraseña</label>
+        <input type="contraseña" name="c" id="">
+        <input type="button" value="Ingresar" onclick="login(this.form)">
+    </form>
+
+    <script>
+        function login(form){
+            if (form.u.value=="luz") {
+                if (form.c.value=="1234") {
+                    location="principal.html";
+                } else {
+                    alert("Contraseña incorrecta");
+                }
+                
+            } else {
+                alert("Usuario incorrecto");
+            }
+
+        }
+    </script>
+
+
+
+
+
+</body>
+</html>
